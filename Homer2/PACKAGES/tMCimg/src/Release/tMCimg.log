@@ -1,0 +1,20 @@
+﻿Build started 1/15/2016 4:08:58 PM.
+     1>Project "C:\jdubb\workspaces\homer2\PACKAGES\tMCimg\src\tMCimg.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\tMCimg.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Release\tMCimg.unsuccessfulbuild".
+         Touching "Release\tMCimg.lastbuildstate".
+     1>Done Building Project "C:\jdubb\workspaces\homer2\PACKAGES\tMCimg\src\tMCimg.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.08

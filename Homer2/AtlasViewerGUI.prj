@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration target="target.ezdeploy.standalone" target-name="MATLAB Compiler for Standalone Applications" name="AtlasViewerGUI" location="c:\jdubb\workspaces\try\homer2" file="c:\jdubb\workspaces\try\homer2\AtlasViewerGUI.prj" preferred-package-type="package.type.exe" build-checksum="357919926" preferred-package-location="c:\jdubb\workspaces\try\homer2">
+    <param.appname>AtlasViewerGUI</param.appname>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.version>1.0</param.version>
+    <param.namespace>AtlasViewerGUI</param.namespace>
+    <param.guid />
+    <param.installpath.string>\AtlasViewerGUI\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes>-e</param.install.notes>
+    <param.intermediate>c:\jdubb\workspaces\try\homer2</param.intermediate>
+    <param.output>c:\jdubb\workspaces\try\homer2</param.output>
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.classorg />
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.user.defined.mcr.options />
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.user.only.registration>false</param.user.only.registration>
+    <param.mads.no.java>false</param.mads.no.java>
+    <param.mads.exclusive.mcr>false</param.mads.exclusive.mcr>
+    <param.net.framework>option.net.framework.default</param.net.framework>
+    <param.assembly.type>false</param.assembly.type>
+    <param.encryption.key.file />
+    <param.net.enable.remoting>false</param.net.enable.remoting>
+    <param.net.tsa.enable>false</param.net.tsa.enable>
+    <param.net.tsa.assembly />
+    <param.net.tsa.interface />
+    <param.net.tsa.namespace>AtlasViewerGUI</param.net.tsa.namespace>
+    <param.net.tsa.superclass />
+    <param.net.tsa.metadata />
+    <param.net.tsa.metadata.assembly>C:\Users\jdubb\Documents\MATLAB</param.net.tsa.metadata.assembly>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.version />
+      <param.namespace />
+      <param.guid />
+      <param.installpath.string />
+      <param.logo />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.classorg />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.user.defined.mcr.options />
+      <param.windows.command.prompt />
+      <param.user.only.registration />
+      <param.mads.no.java />
+      <param.mads.exclusive.mcr />
+      <param.net.framework />
+      <param.assembly.type />
+      <param.encryption.key.file />
+      <param.net.enable.remoting />
+      <param.net.tsa.enable />
+      <param.net.tsa.assembly />
+      <param.net.tsa.interface />
+      <param.net.tsa.namespace />
+      <param.net.tsa.superclass />
+      <param.net.tsa.metadata />
+      <param.net.tsa.metadata.assembly />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\AtlasViewerGUI.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\hmrBandpassFilt.m</file>
+      <file>${PROJECT_ROOT}\hmrBlockAvg.m</file>
+      <file>${PROJECT_ROOT}\hmrConc2OD.m</file>
+      <file>${PROJECT_ROOT}\hmrCreateAuxRegressor.m</file>
+      <file>${PROJECT_ROOT}\hmrDeconvHRF_Drift.m</file>
+      <file>${PROJECT_ROOT}\hmrDeconvHRF_DriftSS.m</file>
+      <file>${PROJECT_ROOT}\hmrDeconvTB_3rd.m</file>
+      <file>${PROJECT_ROOT}\hmrDeconvTB_SS3rd.m</file>
+      <file>${PROJECT_ROOT}\hmrDeconvTB_SS3rd_Highest.m</file>
+      <file>${PROJECT_ROOT}\hmrFindHrfOutlier.m</file>
+      <file>${PROJECT_ROOT}\hmrFlowInput.m</file>
+      <file>${PROJECT_ROOT}\hmrImageHrfMeanTwin.m</file>
+      <file>${PROJECT_ROOT}\hmrImageRecon.m</file>
+      <file>${PROJECT_ROOT}\hmrImageReconConc.m</file>
+      <file>${PROJECT_ROOT}\hmrIntensity2Conc.m</file>
+      <file>${PROJECT_ROOT}\hmrIntensity2OD.m</file>
+      <file>${PROJECT_ROOT}\hmrIntensityNormalized.m</file>
+      <file>${PROJECT_ROOT}\hmrKalman.m</file>
+      <file>${PROJECT_ROOT}\hmrKalmanOscPhys.m</file>
+      <file>${PROJECT_ROOT}\hmrMotionArtifact.m</file>
+      <file>${PROJECT_ROOT}\hmrMotionArtifactByChannel.m</file>
+      <file>${PROJECT_ROOT}\hmrMotionCorrectCbsi.m</file>
+      <file>${PROJECT_ROOT}\hmrMotionCorrectPCA.m</file>
+      <file>${PROJECT_ROOT}\hmrMotionCorrectPCArecurse.m</file>
+      <file>${PROJECT_ROOT}\hmrMotionCorrectSpline.m</file>
+      <file>${PROJECT_ROOT}\hmrMotionCorrectWavelet.m</file>
+      <file>${PROJECT_ROOT}\hmrOD2Conc.m</file>
+      <file>${PROJECT_ROOT}\hmrPCAFilter.m</file>
+      <file>${PROJECT_ROOT}\hmrRegressors.m</file>
+      <file>${PROJECT_ROOT}\MakeFilter.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\AnatomyExists.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\AtlasViewerGUI.fig</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\AtlasViewerGUI_enableDisable.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\AtlasViewerGUI_version.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Axesv\displayAxesv.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Axesv\initAxesv.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Axesv\rotDown.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Axesv\rotHorizontalLeft.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Axesv\rotHorizontalRight.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Axesv\rotUp.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Axesv\rotVerticalLeft.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Axesv\rotVerticalRight.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Axesv\setCameraTarget.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Axesv\setLighting.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Axesv\setOrientation.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Axesv\viewOrigin.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Digpts\disableDigpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Digpts\displayDigpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Digpts\existDigpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Digpts\getDigpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Digpts\initDigpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Digpts\resetDigpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Digpts\saveDigpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Digpts\testDisplayDigpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ezmapper\gethalfwaypt.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ezmapper\parseezs.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ezmapper\plotezsession.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ezmapper\plotezsessions.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ezmapper\regoptodes.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ezmapper\remapoptodes.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\displayFluenceProf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\displaySensitivity.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\enableDisableMCoutputGraphics.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\enableFwmodelDisplay.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\enableMCGenGuiControls.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\enableSensitivityMatrixVolume.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\existMCOutput.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\findMCapp.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\genFluenceProfile.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\genMCinput.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\genMCoutput.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\genSensitivityProfile.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\genSensitivityProfileFromFluenceProf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\get_tiss_prop.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\getFwmodel.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\initFluenceProf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\initFwmodel.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\isFluenceProfEmpty.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\isMCapp.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\isMCRunning.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\load_tMCimg_2pt.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\loadFluenceProf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\loadmc2.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\mcAppList.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\projVoltoMesh_brain.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\projVoltoMesh_scalp.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\read_tMCimg_inp.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\resetFwmodel.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\resetSensitivity.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\saveFluenceProf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\searchDirForMCApp.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\setMCoptions.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\setSensitivityColormap.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ForwardModel\showFwmodelDisplay.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\freesurfer\fread3.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\freesurfer\fwrite3.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\freesurfer\read_surf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\freesurfer\write_surf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\GetMC_Space_RASMatrix.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Group\findSubjDirs.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Guiobj\displayObjects.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Guiobj\getViewerObjects.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Guiobj\restoreObject.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Guiobj\saveObject.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Headsurf\displayHeadsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Headsurf\existsHeadsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Headsurf\getHeadsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Headsurf\initHeadsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Headsurf\saveHeadsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Headvol\displayHeadvol.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Headvol\getHeadvol.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Headvol\initHeadvol.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Headvol\saveHeadvol.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\displayImgRecon.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\enableImgReconDisplay.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\enableImgReconGen.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\genImgReconMetrics.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\getImgRecon.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\ImageRecon.fig</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\ImageRecon.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\initAimg_conc.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\initImgRecon.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\inputParamsImgRecon.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\register_atlas2subj.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\resetImgRecon.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\saveImgRecon.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\setImgReconColormap.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\setImgReconMetricsColormap.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\ImgRecon\showImgReconDisplay.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\AUTHORS.txt</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\cgalmesh.exe</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\cgalmesh.mexa64</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\cgalmesh.mexglx</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\cgalmesh.mexmaci</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\cgalmesh.mexmaci64</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\cgalsimp2.exe</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\cgalsimp2.mexglx</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\cgalsimp2.mexmac</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\cgalsimp2.mexmaci</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\cgalsimp2.mexmaci64</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\jmeshlib.exe</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\jmeshlib.mexa64</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\jmeshlib.mexarmhf</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\jmeshlib.mexglx</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\jmeshlib.mexmac</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\jmeshlib.mexmaci</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\jmeshlib.mexmaci64</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\tetgen.exe</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\tetgen.mexa64</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\tetgen.mexarmhf</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\tetgen.mexglx</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\tetgen.mexmac</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\tetgen.mexmaci</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\bin\tetgen.mexmaci64</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\COPYING.txt</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\deletemeshfile.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\doc\Advanced_Features.txt</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\doc\Download_and_License.txt</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\doc\FAQ.txt</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\doc\gendoc.sh</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\doc\Get_Started.txt</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\doc\INSTALL.txt</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\doc\iso2mesh_workflow.jpg</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\elemvolume.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\faceneighbors.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\fallbackexeext.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\fillholes3d.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\finddisconnsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\flatsegment.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\getexeext.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\getintersecttri.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\getoptkey.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\getplanefrom3pt.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\getvarfrom.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\iso2meshver.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\isoctavemesh.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\loadjson.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\maxsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\mcpath.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\mergestruct.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\mergesurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\meshabox.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\meshasphere.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\meshcheckrepair.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\meshconn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\meshedge.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\mesheuler.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\meshquality.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\meshrefine.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\meshreorient.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\meshresample.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\mwpath.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\neighborelem.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\raytrace.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\README.txt</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\readoff.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\readtetgen.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\remeshsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\removedupelem.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\removedupnodes.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\removeisolatednode.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\removeisolatedsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\saveinr.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\savemphtxt.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\saveoff.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\savesmf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\savestl.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\surfreorient.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\iso2mesh\varargin2struct.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Labelssurf\displayLabelssurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Labelssurf\DistBtw.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Labelssurf\getLabelssurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Labelssurf\initLabelssurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Labelssurf\initLabelssurfProbeProjection.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Labelssurf\ProjectionBI.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Labelssurf\resetLabelssurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Labelssurf\saveLabelssurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\metch\affinemap.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\metch\COPYING</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\metch\dist2surf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\metch\getplanefrom3pt.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\metch\linextriangle.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\metch\nodesurfnorm.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\metch\proj2mesh.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\metch\regpt2surf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\metch\trisurfnorm.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Pialsurf\displayPialsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Pialsurf\getPialsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Pialsurf\initPialsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Pialsurf\savePialsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\displayProbe.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\displaySprings.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\drawMeasChannels.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\findMeasMidPts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\getProbe.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\initProbe.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\initProbeProjection.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\loadSD.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\pullProbeToHeadsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\registerDigpts\ar_AlignPoints.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\registerDigpts\C2S.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\registerDigpts\getProbeRegMethod.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\registerDigpts\reg_subj2atlas.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\registerSprings\duplicate_anchors.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\registerSprings\gen_positionprobe_dat.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\registerSprings\getRegSpringError.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\registerSprings\optconn_auto_gen.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\registerSprings\positionprobe.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\registerSprings\registerProbe2Head.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\registerSprings\spring2posprobe.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\registerSprings\write_positionprobe_dat.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\resetProbe.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\resetProbeGui.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\setOptodeNumbering.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\setProbeDisplay.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\updateProbeGuiControls.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Probe\viewProbe.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\calcRefpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\calcRefptsAlongCurve.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\calcRefptsSmallscale.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\curve_gen.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\curve_walk.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\curvelen.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\displayRefpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\find_curve_path.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\findCenterRefpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\findCorrespondingRefpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\gen_sparcer_curve.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\getRefpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\initRefpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\makeLandmarksBackwardCompatible.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\plane_equation.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\plane_surf_intersect.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\radiobuttonShowRefpts_Callback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\readRefpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\saveRefpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Refpts\updateRefpts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Tools\plotProbePlacementVariation.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\uipanelBrainDisplay_Callback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\buildpathfrompathparts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\cell2array.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\closeallwaitbars.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\displayIntensityOnMesh.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\dist3.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\DistanceBetween.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\equal.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\ezmapper2txt.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\ffpath.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fieldvals.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fieldvalues.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\find_region_centers.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\findcenter.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\findDotMFiles.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\create_hseg.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\fs2headvol.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\fs2pialsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\gen_mri_nifti_files.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\get_nii_vox2ras.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\getFs2Viewer.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\headvol2headsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\initFs2Viewer.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\isolatehead.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\load_bin.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\mri_convert_batch.sh</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\readsurf_trans.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\save_bin.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\segment_head.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\segment_head_vols.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\surf_file2vol.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\surface2volume.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\fs2viewer\vol2constvol.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\gen_bbox.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\gen_blob.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\gen_xform_from_pts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\getDesktopDir.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\getFileDateStruct.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\getpathparts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\img2mesh.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\inputdlg_errcheck.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\ishandles.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\isidentity.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\isregistered.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\istextfile.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\leftRightFlipped.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\load_fs_pial.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\load_vox.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\MakePlot3D.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\meshdensity.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nearest_point.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\affine3d.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\bipolar.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\bresenham_line3d.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\expand_nii_scan.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\extra_nii_hdr.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\flip_lr.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\get_nii_frame.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\load_nii.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\load_nii_ext.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\load_nii_hdr.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\load_nii_img.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\load_untouch0_nii_hdr.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\load_untouch_nii.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\load_untouch_nii_hdr.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\make_nii.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\mat_into_hdr.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\reslice_nii.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\rri_file_menu.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\rri_orient.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\rri_orient_ui.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\rri_xhair.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\rri_zoom_menu.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\save_nii.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\save_nii_ext.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\save_nii_hdr.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\save_untouch0_nii_hdr.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\save_untouch_nii.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\save_untouch_nii_hdr.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\unxform_nii.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\verify_nii_ext.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\view_nii.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\view_nii_menu.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\nifti\xform_nii.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\prepPtsStructForViewing.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\pts_on_line5.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\pts_on_line6.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\pullPtsToSurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\save_tiss_type.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\save_vox.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\uibutton.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\viewPts.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\viewsurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\viewsurf2.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\viewvol_in3d_isosurf.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\viewvol_in3d_points.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\xform_apply.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\AtlasViewerGUI\Utils\xform_apply_vol_smooth.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\ChangeLog.txt</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\get_pt_from_buttondown.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\getOptPosFromAxes.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\lambda\wavelength1_edit_ButtonDownFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\lambda\wavelength1_edit_CreateFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\lambda\wavelength1_edit_Update.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\lambda\wavelength2_edit_ButtonDownFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\lambda\wavelength2_edit_CreateFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\lambda\wavelength2_edit_Update.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\lambda\wavelength3_edit_ButtonDownFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\lambda\wavelength3_edit_CreateFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\lambda\wavelength3_edit_Update.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\lambda\wavelength_edit_Callback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\error_check_optode_dummy_tbl.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\error_check_optode_tbls2.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_anchor_tbl_CellEditCallback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_anchor_tbl_CellSelectionCallback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_anchor_tbl_Clear.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_anchor_tbl_CreateFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_anchor_tbl_ErrCheck.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_anchor_tbl_get_tbl_data.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_anchor_tbl_GetSize.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_anchor_tbl_Init.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_anchor_tbl_Update.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_dummy_tbl_CellEditCallback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_dummy_tbl_CellSelectionCallback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_dummy_tbl_Clear.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_dummy_tbl_CreateFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_dummy_tbl_GetSize.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_dummy_tbl_Init.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_dummy_tbl_Update.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_dummy_tbl_UpdateNum.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_spring_tbl_CellEditCallback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_spring_tbl_CellSelectionCallback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_spring_tbl_Clear.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_spring_tbl_CreateFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_spring_tbl_get_tbl_data.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_spring_tbl_GetSize.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_spring_tbl_Init.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_spring_tbl_Update.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls2\optode_tbls2_Hide.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\error_check_optode_tbls.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_det_tbl_CellEditCallback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_det_tbl_CellSelectionCallback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_det_tbl_Clear.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_det_tbl_CreateFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_det_tbl_get_tbl_data.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_det_tbl_Init.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_src_tbl_CellEditCallback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_src_tbl_CellSelectionCallback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_src_tbl_Clear.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_src_tbl_CreateFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_src_tbl_get_tbl_data.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_src_tbl_GetSize.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_src_tbl_Init.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_src_tbl_srcmap_show_Callback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_src_tbl_srcmap_show_GetVal.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_src_tbl_srcmap_show_UpdateSrcTbl.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\optode_tbls\optode_tbls_Hide.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes2\getSpringListFromAxes.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes2\probe_geometry_axes2_ButtonDownFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes2\probe_geometry_axes2_Clear.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes2\probe_geometry_axes2_CreateFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes2\probe_geometry_axes2_edges_ButtonDownFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes2\probe_geometry_axes2_GetUserData.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes2\probe_geometry_axes2_Hide.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes2\probe_geometry_axes2_Init.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes2\probe_geometry_axes2_OptUpdate.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes2\probe_geometry_axes2_SetAxisEqual.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes2\set_view_probe_geometry_axes2.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes\getMeasListFromAxes.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes\probe_geometry_axes_ButtonDownFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes\probe_geometry_axes_Clear.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes\probe_geometry_axes_CreateFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes\probe_geometry_axes_DetUpdate.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes\probe_geometry_axes_DummyUpdate.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes\probe_geometry_axes_GetUserData.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes\probe_geometry_axes_Hide.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes\probe_geometry_axes_Init.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes\probe_geometry_axes_SetAxisEqual.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes\probe_geometry_axes_SrcUpdate.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\probe_geometry_axes\set_view_probe_geometry_axes.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sample_data\111tap1.nirs</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sample_data\111tap_run1.nirs</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sample_data\probe1.SD</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sample_data\probe2.SD</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sample_data\probe_large.SD</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sample_data\Simple_Probe.nirs</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sample_data\tw1.nirs</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sample_data\twocyc158.nirs</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_AddDetPos.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_AddDummyPos.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_AddEditDummy.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_AddEditSpring.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_AddSrcPos.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_Clear.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_Create.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_DeleteDetPos.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_DeleteDummyPos.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_DeleteSpring.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_DeleteSrcMapEntry.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_DeleteSrcPos.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_ErrorFix.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_Get.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_GetAnchorList.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_GetMeasList.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_GetNwl.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_GetSpringList.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_Init.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_Set.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_SetAnchorList.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_SetDetPos.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_SetDummyPos.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_SetLambda.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_SetMeasList.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_SetSpringList.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_SetSrcMap.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_SetSrcMapDefault.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_SetSrcMapEntry.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_SetSrcPos.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_data\sd_data_UpdateSpringList.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_file_load.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_file_load_bttn_Callback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_file_open.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_file_panel_Clear.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_file_panel_CreateFcn.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_file_panel_GetErrMsgHandle.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_file_panel_GetPathname.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_file_panel_GetPos.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_file_panel_SetErrMsgHandle.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_file_panel_SetPathname.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_file_save.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_file_save2nirs.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_file_save_bttn_Callback.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_filename_edit_Get.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sd_file\sd_filename_edit_Set.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\SDgui.fig</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\SDgui.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\SDgui_AtlasViewerGUI.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\SDgui_version.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\set_threshold.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sort_ml.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\sort_sl.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\utils\distmatrix.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\utils\pts_on_line2.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\utils\redraw_text.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\utils\redraw_text_many.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\SDgui\utils\resize_axes.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\Utils\isdigit.m</file>
+      <file>${PROJECT_ROOT}\PACKAGES\Utils\isnumber.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\cleanNIRSfiles.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\drawProbeGood.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\example1.nirs</file>
+      <file>${PROJECT_ROOT}\UTILITIES\GetExtinctions.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\getTTLtimes.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\hmrCheckAuxValidity.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\hmrDataQualityCheck.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\hmrNirsFileDecimate.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\hmrPruneChannels.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\hmrTestNIRSforHR.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\iWLS\ar_glm_final.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\iWLS\robust_ar_fit.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\addRegressors.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\addRegressors_BP.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\addRegressors_HR.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\addRegressors_nearSD.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\addRegressors_retroicor.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\addRegressors_RR.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\buildRegressorsCSV.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\computeRR.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\computeRVT.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\fasttool_polytrendmtx.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\fasttool_svd.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\findpeaks.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\getSpikes.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\hmrBuildRetroicorEstimate.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\NORMALIZEfilter.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\pruneBeats.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\reg_peakfinder.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\respFilter.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\REGRESSORS\sg_getDeriv.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\removeChannels.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\removeStimuli.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\removeTimePoints.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\Wavelet\IWT_inv.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\Wavelet\NormalizationNoise.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\Wavelet\WaveletAnalysis.m</file>
+      <file>${PROJECT_ROOT}\UTILITIES\Wavelet\WT_inv.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file name="AtlasViewerGUI.exe" location="c:\jdubb\workspaces\try\homer2" optional="false">c:\jdubb\workspaces\try\homer2\AtlasViewerGUI.exe</file>
+      <file name="readme.txt" location="c:\jdubb\workspaces\try\homer2" optional="true">c:\jdubb\workspaces\try\homer2\readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2013b</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.1</osver>
+      <os32>true</os32>
+      <os64>false</os64>
+      <arch>win32</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
+

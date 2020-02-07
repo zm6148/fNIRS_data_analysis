@@ -1,0 +1,24 @@
+Ready to make a release. Here are the recent changes that I've made to the development version:
+
+-- Made invisible the menu options to generate and load fluence profiles and to do image recon. 
+
+-- Modified Buildme script to build AtlasViewerGUI so that it builds successfully and loads very quickly the first and subsequent times. This might be a good solution for the incredible amount of time it took to build and 
+load AtlasViewerGUI in the NIRS class in 2013b. (At least in my testing it worked this way. Needs to be tested by others on other platfoms to confirm). 
+
+-- I built Homer2_UI.exe and AtlasViewerGUI.exe in 2014b but haven't released it yet. For the release I'm proposing the version 2.1.  
+
+-- Added AtlasViewerGUI version to saveObjects.m so that we know what version of the GUI was used to save the viewer state. 
+
+-- Fixed faulty error checking code in getProbe which loads and compares measurement list from SD file to digpts sources and detectors. Also rather than reject the whole SD.MeasList if the measlist references undigitized optodes, only throw away invalid channels and keep the rest of the measlist.
+
+-- There was an old problem where white dots appearing against head in AtlasViewer. The reason was that the display function plotted these points to indicate the bounding box of the display objects so the axes would resize automatically to include text graphics. In matlab text graphics are annotations which do not resize the axes making graphics like numbered optodes or digitizede points be totally or partially obscured by a undersized axes, especially if you rotate the axes with the digitized points. But I got rid of the white dots due to complaints about them in homer-users list by commenting out the code in viewPts which draws those dots, forgetting about the problem it was meant to solve. This change in viewPts fixes both the white dots problem and the digitized points being obscured problem by just changing the 'marker' property from '.' to 'none'.
+
+-- Meryem found bug. When saving viewer state of subjects separately and then adding those subjects to group the subject id remains = 1 even though it should have changed to it's new group subject id. It gets the wrong subject id from the saved viewer state. The solution is not to save some fields such as subj id. To fix added function ptr to each object, prepObjForSave, where each object defines it's own field that should be removed before saving object. 
+
+-- Finally found the correct way to determine orientation and display head objects so that left-right show up correctly based on the reference points and Freesurfer style 3 letter code from AP/SI/LR (Anterior-Posterior/Superior-Inferior/Left-Right). Cleaned out the code from incorrect old method using T_2ras. 
+
+-- Added backward compatibility with saved state objects from precious versions. This involved adding the function pointer to each object, checkCompatability(). 
+
+-- Made rotate axes buttons work the same as the way David did in brainscape - simple characters <, >, /\, and \/ rather than fancy special chracters created by the uibutton function which was removed. 
+
+-- Homer2 PlotProbe graphics look a bit different in 2014b where panel names are obscured and text box size is too small for the contained text. Making adjustment to deal with.
