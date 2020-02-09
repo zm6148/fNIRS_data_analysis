@@ -1,0 +1,189 @@
+# Load eye-tracking data for one subject,
+# mung it, plot it
+library(ggplot2)
+library(reshape2)
+library(dplyr)
+library(lme4)
+
+# First remove all objects
+rm(list=ls())
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+# Load the files
+setwd("C:\\Users\\mz86\\Desktop\\Fnirs data and analysis\\polynomial using R experiment 1 - repeat")
+#load("demo_data.RData")
+source("code_poly.R")
+source("get_pvals.R")
+
+full_data <- read.csv(file=sprintf('C:\\Users\\mz86\\Desktop\\Fnirs data and analysis\\polynomial using R experiment 1 - repeat\\R_data_active_passive_HbO.csv'), header=FALSE, sep=",")
+
+# V1: subject ID (sid)
+# v2: location (1:E, 2:A, 3:F, 4:B)
+# V3: condition(1:speech, 2: noise)
+# V4: time in milliseconds
+# V5: fnirs_data
+
+names(full_data) <- c("SID", "hemsphere", "location", "roi_code", "condition", "Time", "fnirs_data")
+
+full_data$condition <- as.factor(full_data$condition)
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+# Summarise for plotting
+#
+# First for individuals
+data_sum_indiv <- full_data %>%
+  ungroup() %>%
+  #group_by(Participant, Hearing, Group, Context, Time) %>%
+  group_by(SID, hemsphere, location, roi_code, condition, Time) %>%
+  summarise(fnirs_data = mean(fnirs_data, na.rm = TRUE)) 
+
+# Then whole groups, with variance
+data_sum_group <- data_sum_indiv %>%
+  ungroup() %>%
+  group_by(hemsphere, location, roi_code, condition, Time) %>%
+  summarise(num_listeners = n(),
+            fnirs_data.se = sd(fnirs_data, na.rm = TRUE)/sqrt(n()),
+            fnirs_data = round(mean(fnirs_data, na.rm = TRUE),4))
+
+# Basic plot
+ggplot(data_sum_group)+
+  aes(x = Time, y = fnirs_data, color = condition) +
+  geom_ribbon(aes(ymin = fnirs_data - fnirs_data.se,
+                ymax = fnirs_data + fnirs_data.se,
+                fill = condition),
+                alpha = 0.5, color = NA)+
+  #geom_line()+
+  facet_grid(. ~ roi_code)
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+# establish analysis windows
+window.part1.start <- -5000
+window.part1.end <- 40000
+
+window.part2.start <- 15000
+window.part2.end <- 40000
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+# Add polynomials to windowed data frames
+
+df_poly_win1 <- data_sum_indiv %>%
+  filter(Time >= window.part1.start,
+         Time <= window.part1.end) %>%
+  code_poly(df = ., 
+            predictor = "Time",
+            poly.order = 6, 
+            orthogonal = TRUE, 
+            draw.poly = TRUE)
+
+df_poly_win2 <- data_sum_indiv %>%
+  filter(Time >= window.part2.start,
+         Time <= window.part2.end) %>%
+  code_poly(df = ., 
+            predictor = "Time",
+            poly.order = 6, 
+            orthogonal = TRUE, 
+            draw.poly = TRUE)
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+
+# Fit the first window
+gca_model_win1 <- lmer(fnirs_data ~ 
+                         # Default effects
+                         poly1 + poly2 + poly3 + poly4 + poly5 + poly6 +
+                         hemsphere + location + condition +
+                         # two-way interactions
+                         location:condition +
+                         hemsphere:condition +
+                         hemsphere : location +
+                         poly1:condition + 
+                         poly2:condition + 
+                         poly3:condition +
+                         poly4:condition +
+                        poly5:condition +
+                          poly6:condition +
+                         poly1:hemsphere + 
+                         poly2:hemsphere + 
+                         poly3:hemsphere +
+                          poly4:hemsphere +
+                         poly5:hemsphere +
+                        poly6:hemsphere +
+                         poly1:location + 
+                         poly2:location + 
+                         poly3:location +
+                          poly4:location +
+                         poly5:location +
+                         poly6:location +
+                         # three-way interactions
+                         # poly1:condition:hemsphere +
+                         # poly2:condition:hemsphere +
+                         # poly3:condition:hemsphere +
+                         # poly4:condition:hemsphere +
+                         # poly1:condition:location +
+                         # poly2:condition:location +
+                         # poly3:condition:location +
+                         # poly4:condition:location +
+                         # poly1:condition:hemsphere +
+                         # poly2:condition:hemsphere +
+                         # poly3:condition:hemsphere +
+                         # poly4:condition:hemsphere +
+                         # poly1:hemsphere : location +
+                         # poly2:hemsphere : location +
+                         # poly3:hemsphere : location +
+                         # poly4:hemsphere : location +
+                         # Random effects
+                         #-----------------------------------#
+                         # these are the actual model effects
+                         # (1+ poly1 + poly2 + poly3 + poly4 + poly5 + poly6 + condition + location + hemsphere +
+                         # condition:roi_code|SID),
+                         #-----------------------------------#
+                         # this is a simplified random effect
+                         # just to run quickly in this demo.
+                         (1|SID),
+                         #-----------------------------------#
+                         data=df_poly_win1)
+
+model_win1_summary <- summary(gca_model_win1)
+model_win1_summary
+
+# Add p values
+coefs_1 <- get_pvals(gca_model_win1)
+coefs_1
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+# Verify model output on the plot
+# add fitted valued to data frame
+df_poly_win1$predicted <- fitted(gca_model_win1)
+
+# summarize first
+df_poly_win1_sum <- df_poly_win1 %>%
+  ungroup() %>%
+  group_by(hemsphere, location, roi_code, condition, Time) %>%
+  summarise(num_listeners = n(),
+            fnirs_data.se = sd(fnirs_data, na.rm = TRUE)/sqrt(n()),
+            fnirs_data = round(mean(fnirs_data, na.rm = TRUE),4),
+            predicted = mean(predicted))
+
+# Plot model prediction on top of the real data
+ggplot(df_poly_win1_sum)+
+  aes(x = Time, y = fnirs_data, color = condition)+
+  geom_ribbon(aes(ymin = fnirs_data - fnirs_data.se,
+                  ymax = fnirs_data + fnirs_data.se,
+                  fill = condition),
+              alpha = 0.5, color = NA)+
+  # actual data
+  # geom_line()+
+  # model prediction
+  # first white line
+  geom_line(aes(y = predicted, group = condition), color = "white", size = 2.2)+
+  # dashed line
+  geom_line(aes(y = predicted, group = condition), size = 1, linetype = "dashed")+
+  facet_grid(. ~ roi_code)
+
+#full_data$Fit <- fitted(gca_model_win1)
+r21 = cor(df_poly_win1$fnirs_data, df_poly_win1$predicted)^2
