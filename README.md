@@ -1,4 +1,4 @@
-# fNIRS_data_analysis-git
+# fNIRS_data_analysis
  matlab code for fNIRS analysis
  Each experiment is located in separate folder.
  
