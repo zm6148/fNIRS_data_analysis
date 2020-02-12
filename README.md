@@ -50,4 +50,5 @@ Example results from Exp 1
 1. block average
 ![GitHub Logo](https://lh3.googleusercontent.com/mC4m-J3bE8xoLZLf-VGacvzjBuoSnf_Vu8RiF9YoPV8d7QlChoeFcZdwok9mczSTwuUL3hfIFdehjUswl1_33gSs8PjjTz6-IJ8APLUpLxLeDMCRnbwfVSs5A4_oKQ4a-g1ezDAG5g=w2400)
 2. GLM
+![GitHub Logo](https://lh3.googleusercontent.com/2AtLXjpsQKFcV6JoeIuszot7RBCqbT9cXd2osBZX41h8efZqHpRUVKywvXDzujNYADulz5XD-VL2n8tCx1N-t1u9IWoj74CZQOAlCXlZLFFOP3LWzamTOi3s7Yid-FT3t4t6A2oy1g=w2400)
 
