@@ -46,3 +46,8 @@ C (left tgPCS);  A (right tgPCS); D (left cIFS);   (right cIFS). Figure 2 is the
 
 7)	Too see the block average trace of HbO, run the .m file named “data_analysis_HbO_trace_exp2.m”.  
 
+Example results from Exp 1
+1. block average
+![GitHub Logo](https://lh3.googleusercontent.com/mC4m-J3bE8xoLZLf-VGacvzjBuoSnf_Vu8RiF9YoPV8d7QlChoeFcZdwok9mczSTwuUL3hfIFdehjUswl1_33gSs8PjjTz6-IJ8APLUpLxLeDMCRnbwfVSs5A4_oKQ4a-g1ezDAG5g=w2400)
+2. GLM
+
