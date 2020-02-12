@@ -52,3 +52,10 @@ Example results from Exp 1
 2. GLM
 ![GitHub Logo](https://lh3.googleusercontent.com/2AtLXjpsQKFcV6JoeIuszot7RBCqbT9cXd2osBZX41h8efZqHpRUVKywvXDzujNYADulz5XD-VL2n8tCx1N-t1u9IWoj74CZQOAlCXlZLFFOP3LWzamTOi3s7Yid-FT3t4t6A2oy1g=w2400)
 
+
+ML on fnirs data is the folder for ML using fNIRS block average data
+1. how to generate data set from limited subjects
+![GitHub Logo](https://lh3.googleusercontent.com/dcT8XDDT8OFxplPU3BR8FNh0ZFOp7TayGYAV7bVV8vQ_DSgR9Ppq3lZPnPUXfH1FTP4M2NT_VjPlGw6bjjgfLHa9f3q2-_nbaF2Ori83QFBUaOjXkX1yXZ0_2ZOffyKDwd7PtAbxzQ=w2400)
+2. SVM results
+![GitHub Logo](https://lh3.googleusercontent.com/IptTuhyG3MwcT0YgIbMZ5z3shnEQe18jPADROBCxOxWWvNLdvcgngVVTPN3EwtUOeDuUiVQw1VaSpwhvifiQ7AeIB7RECrPv9R-28KAFPdq3r5hQQswRAieNW35R_l1csPqlotbOXQ=w2400)
+
