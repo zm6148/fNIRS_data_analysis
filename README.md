@@ -1,4 +1,10 @@
 # fNIRS_data_analysis
+
+
+# fNIRS_ML.ipynb is the colab file with ML on fnirs data procedures
+https://colab.research.google.com/drive/1GAEBau--6o1TsjpCUo6DFkH9camo3syn#scrollTo=BukfmkkTuWbU
+
+# data preprocessing
  matlab code for fNIRS analysis
  Each experiment is located in separate folder.
  
